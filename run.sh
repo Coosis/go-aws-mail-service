@@ -8,8 +8,3 @@ export QUEUE_NAME=mail
 export SEND_FROM="andy@gmail.com"
 export WORKER_NAME="andys-worker"
 go run .
-
-export AMQP_URI=amqp://andy:realpassword@localhost:5672/
-export QUEUE_NAME=mail
-export SEND_TO="mandy@gmail.com"
-go run ./test/runtest.go

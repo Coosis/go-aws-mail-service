@@ -1,3 +1,4 @@
 .DS_Store
 run-sec.sh
 runtest-sec.sh
+run-container.sh

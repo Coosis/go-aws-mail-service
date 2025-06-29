@@ -7,5 +7,5 @@ services:
       - "5672:5672"  # RabbitMQ default port
       - "15672:15672"  # RabbitMQ management UI
     environment:
-      RABBITMQ_DEFAULT_USER: vlad
-      RABBITMQ_DEFAULT_PASS: passwd
+      RABBITMQ_DEFAULT_USER: andy
+      RABBITMQ_DEFAULT_PASS: realpassword
