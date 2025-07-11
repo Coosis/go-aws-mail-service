@@ -1,4 +1,4 @@
-module github.com/Coosis/go-mail-service
+module github.com/Coosis/go-aws-mail-service
 
 go 1.24.2
 
