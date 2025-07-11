@@ -5,7 +5,7 @@ import (
 	"context"
 	"time"
 
-	. "github.com/Coosis/go-mail-service/model"
+	. "github.com/Coosis/go-aws-mail-service/model"
 	amqp "github.com/rabbitmq/amqp091-go"
 )
 

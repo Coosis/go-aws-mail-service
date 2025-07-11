@@ -13,7 +13,7 @@ import (
 	"github.com/aws/aws-sdk-go-v2/service/ses"
 	"github.com/aws/aws-sdk-go-v2/service/ses/types"
 
-	. "github.com/Coosis/go-mail-service/model"
+	. "github.com/Coosis/go-aws-mail-service/model"
 
 	amqp "github.com/rabbitmq/amqp091-go"
 )
