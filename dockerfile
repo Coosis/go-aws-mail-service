@@ -5,7 +5,7 @@ WORKDIR /app
 COPY go.mod go.sum ./
 RUN go mod download
 COPY . .
-RUN go build -trimpath -ldflags="-s -w" -o ./server ./main.go
+RUN go build -trimpath -ldflags="-s -w" -o ./server .
 
 
 # RUNTIME
