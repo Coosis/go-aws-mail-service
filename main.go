@@ -14,8 +14,6 @@ import (
 	"github.com/aws/aws-sdk-go-v2/service/ses/types"
 
 	. "github.com/Coosis/go-aws-mail-service/model"
-
-	amqp "github.com/rabbitmq/amqp091-go"
 )
 
 func main() {
@@ -42,13 +40,14 @@ func main() {
 	ctx, stop := signal.NotifyContext(context.Background(), os.Interrupt, os.Kill)
 	defer stop()
 
-	conn, err := amqp.Dial(uri)
+
+	client, err := NewClient(ctx, uri)
 	if err != nil {
 		panic("failed to connect to RabbitMQ, " + err.Error())
 	}
-	defer conn.Close()
+	defer client.Close()
 
-	ch, err := conn.Channel()
+	ch, err := client.Channel()
 	if err != nil {
 		panic("failed to open a channel, " + err.Error())
 	}
